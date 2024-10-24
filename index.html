@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOM Example</title>
+    <script>
+        function showBOMProperties() {
+            // Alert the browser information
+            alert("Browser Name: " + navigator.appName);
+            alert("Browser Version: " + navigator.appVersion);
+            alert("User Agent: " + navigator.userAgent);
+            alert("Screen Width: " + screen.width);
+            alert("Screen Height: " + screen.height);
+            alert("Current URL: " + window.location.href);
+        }
+
+        function openNewWindow() {
+            // Open a new window
+            window.open('https://www.example.com', 'newwindow', 'width=600,height=400');
+        }
+
+        function goBack() {
+            // Go back to the previous page
+            window.history.back();
+        }
+
+        function changeLocation() {
+            // Change the current location
+            window.location.href = 'https://www.example.com';
+        }
+    </script>
+</head>
+<body>
+    <h1>BOM Example</h1>
+    <button onclick="showBOMProperties()">Show BOM Properties</button>
+    <button onclick="openNewWindow()">Open New Window</button>
+    <button onclick="goBack()">Go Back</button>
+    <button onclick="changeLocation()">Go to Example.com</button>
+</body>
+</html>
